@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Performance Profiling</title>
+    <link href="css/demo.css" rel="stylesheet" />
+</head>
+<body>
+<div id="impress">
+  <div class="step slide flex column" data-x="-1000" data-y="-1500">
+       <h1 class="title center">Performance Profiling</h1>
+        <div class="content">
+             <p class="center">Ensures that the application is optimized for higher frame rate and lower memory footprints making the users more engaged.</p>
+       </div>
+  </div>
+  <div class="step slide" data-x="0" data-y="-1500">
+       <h1 class="title center">Frame rate</h1>
+        <div class="content">
+        <p>Frame rate is the rate at which a device produces consecutive images to the screen</p>
+        <img class="block pad-element-top" src="img/sample_fps.jpg" alt="FPS">
+
+       </div>
+  </div>
+  <div class="step slide" data-x="1000" data-y="-1500">
+       <h1 class="title center">Tools</h1>
+        <div class="content">
+        <p><a href="https://github.com/mrdoob/stats.js/">Stats JS</a> helps us to monitor the frame rate. Refer the below snapshot's top left corner.</p>
+        <img class="block pad-element-top" src="img/fps.png" alt="FPS">
+
+       </div>
+  </div>
+  <div class="step slide" data-x="2000" data-y="-1500">
+       <h1 class="title center">Memory footprint</h1>
+        <div class="content">
+               <p>Memory footprint refers to the amount of main memory that a program uses or references while running</p>
+               <img class="block pad-element-top" src="img/memory_usage.png" />
+
+       </div>
+  </div>
+     <div class="step slide" data-x="3000" data-y="-1500">
+       <h1 class="title center">Tools</h1>
+        <div class="content">
+        			<p> <a href="https://developer.chrome.com/devtools"> Chrome Dev tools</a> are a set of web authoring and debugging tools built into Google Chrome browser</p>
+        			<img class="block pad-element-top" src="img/devtools.png" />
+
+
+       </div>
+  </div>
+  <div class="step slide" data-x="4000" data-y="-1500">
+       <h1 class="title center">Steps involved</h1>
+        <div class="content">
+        			<p>1. Open chrome task manager (Shift+Esc) and keep a watch on the memory consumed by the application</p>
+                   <img class="block pad-element-top" src="img/chrome-task-manager.png" />
+
+       </div>
+  </div>
+   <div class="step slide" data-x="5000" data-y="-1500">
+        <div class="content">
+
+                    <p class="center">2. Use chrome's memory timeline to confirm your assumptions</p>
+                   <img class="block pad-element-top" src="img/timeline.png" />
+
+       </div>
+  </div>
+   <div class="step slide" data-x="6000" data-y="-1500">
+        <div class="content">
+
+                    <p class="center">3. Use chrome's Profilers to take heap snapshots to pinpoint the areas causing leak</p>
+                   <img class="block pad-element-top" src="img/heap-snapshot.png" />
+
+       </div>
+  </div>
+  <div class="step slide" data-x="7000" data-y="-1500" >
+        <h1 class="title center">Code with memory leak</h1>
+        <div class="content">
+        <p>Closures and Memory Leak</p>
+        <p data-height="400" data-theme-id="7817" data-slug-hash="xGvWVZ" data-default-tab="js" data-user="ramanathanMuthuraman" class='codepen'>See the Pen <a href='http://codepen.io/ramanathanMuthuraman/pen/xGvWVZ/'>Memory leak example</a> by ramanathan (<a href='http://codepen.io/ramanathanMuthuraman'>@ramanathanMuthuraman</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+		<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+    </div>
+    <div class="step slide" data-x="8000" data-y="-1500" >
+        <div class="content">
+        <p>DOMs and Memory Leak</p>
+        <p data-height="400" data-theme-id="7817" data-slug-hash="YXmLLg" data-default-tab="js" data-user="ramanathanMuthuraman" class='codepen'>See the Pen <a href='http://codepen.io/ramanathanMuthuraman/pen/YXmLLg/'>DOM memory leak example</a> by ramanathan (<a href='http://codepen.io/ramanathanMuthuraman'>@ramanathanMuthuraman</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+		<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+        </div>
+    </div>
+    <div class="step slide flex" data-x="9000" data-y="-1500" >
+        <h1>Thank you!!!</h1>
+    </div>
+</div>
+<script src="js/impress.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/demo.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
