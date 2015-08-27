@@ -24,7 +24,9 @@
   <div class="step slide" data-x="1000" data-y="-1500">
        <h1 class="title center">Tools</h1>
         <div class="content">
-        <p><a href="https://github.com/mrdoob/stats.js/">Stats JS</a> helps us to monitor the frame rate. Refer the below snapshot's top left corner.</p>
+        <p><a href="https://github.com/mrdoob/stats.js/">Stats JS</a> helps us to monitor the frame rate. </p>
+        <p>Add this code to any page using the following <a href="javascript:(function(){var script=document.createElement('script');script.onload=function(){var stats=new Stats();stats.domElement.style.cssText='position:fixed;left:0;top:0;z-index:10000';document.body.appendChild(stats.domElement);requestAnimationFrame(function loop(){stats.update();requestAnimationFrame(loop)});};script.src='//rawgit.com/mrdoob/stats.js/master/build/stats.min.js';document.head.appendChild(script);})()">stats-bookmarklet</a>.
+        Refer the below snapshot's top left corner.</p>
         <img class="block pad-element-top" src="img/fps.png" alt="FPS">
 
        </div>
@@ -41,9 +43,9 @@
     <div class="step slide" data-x="3000" data-y="-1500">
        <h1 class="title center">Memory leak</h1>
         <div class="content">
-               <p> It is the gradual loss of available computer memory when a program 
+               <p> It is the gradual loss of available computer memory when a program
                repeatedly fails to return memory that it has obtained for temporary use</p>
-               <p class="pad-element-top center">Common reasons for memory leak are 
+               <p class="pad-element-top center">Common reasons for memory leak are
                <ul class="desc">
                 <li>Variable retaining closure scope</li>
                 <li>Active reference to DOM nodes</li>
@@ -57,7 +59,7 @@
      <div class="step slide" data-x="4000" data-y="-1500">
        <h1 class="title center">Tools</h1>
         <div class="content">
-        			<p> <a href="https://developer.chrome.com/devtools"> Chrome Dev tools</a> are a set of web authoring and debugging tools built into Google Chrome browser</p>
+        			<p> <a href="https://developer.chrome.com/devtools"> Chrome Dev tools</a> are a set of web authoring and debugging tools built into Google Chrome browser helps us in identifying memory leaks.</p>
         			<img class="block pad-element-top" src="img/devtools.png" />
 
 
@@ -83,7 +85,7 @@
         <div class="content">
 
                     <p class="center">3. Use <a href="https://developers.google.com/web/tools/profile-performance/memory-problems/allocation-profiler">
-                     Chrome's Allocation Profiler</a> to take heap snapshots to pinpoint the areas causing leak. This is more advanced than 
+                     Chrome's Allocation Profiler</a> to take heap snapshots to pinpoint the areas causing leak. This is more advanced than
                      <a href="https://developers.google.com/web/tools/profile-performance/memory-problems/heap-snapshots">Chrome's Heap Snapshot recording</a></p>
                    <img class="block pad-element-top" src="img/heap-snapshot.png" />
 
